@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+.chef{
+    background: linear-gradient(200.26deg, #c50000 95.3%, #FFFFFF 94.35%); 
+}
+.navbar-toggler  {
+    
+    border: 1px solid rgb(255, 255, 255) !important;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+}
+.btn-outline-secondary {
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+}
+.btn-outline-secondary:hover {
+    color: #c50000 !important;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.c-item{
+    width: 100%;
+    height:40% !important;
+    border-radius: 10px;
+    
 }
+.carousel-self{
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    box-shadow: 2px 2px  2px rgb(177, 177, 177, 0.562), -2px -2px 2px rgba(177, 177, 177, 0.562);
+    border: 1px solid #000;
+    border-radius: 10px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
