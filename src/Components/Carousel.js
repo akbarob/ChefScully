@@ -71,27 +71,30 @@ function MyCarousel() {
     });
   
     return (
-        <div className='col-7 mx-auto text-center' style={{
-            display: 'block',  padding: 30
-        }}>
-            <h8 className>POPULAR ITEMS</h8>
-            <Carousel previous={previousButton} next={nextButton}
-                activeIndex={activeIndex}
-                className="col-auto my-5">
-                <CarouselIndicators items={items}
+        <div>
+            <h4 className="reds text-center"><strong>POPULAR ITEMS</strong></h4>
+
+            <div className='col-7 mx-auto text-center' style={{
+                display: 'block',  padding: 30
+            }}>
+                <Carousel previous={previousButton} next={nextButton}
                     activeIndex={activeIndex}
-                    onClickHandler={(newIndex) => {
-                        if (animating) return;
-                        setActiveIndex(newIndex);
-                    }} 
-                />
-                {carouselItemData}
-                <CarouselControl directionText="Prev"
-                    direction="prev" onClickHandler={previousButton} />
-                <CarouselControl directionText="Next"
-                    direction="next" onClickHandler={nextButton} />
-            </Carousel>
-        </div >
+                    className="col-auto my-3">
+                    <CarouselIndicators items={items}
+                        activeIndex={activeIndex}
+                        onClickHandler={(newIndex) => {
+                            if (animating) return;
+                            setActiveIndex(newIndex);
+                        }} 
+                    />
+                    {carouselItemData}
+                    <CarouselControl directionText="Prev"
+                        direction="prev" onClickHandler={previousButton} />
+                    <CarouselControl directionText="Next"
+                        direction="next" onClickHandler={nextButton} />
+                </Carousel>
+            </div >
+        </div>
     );
 }
   

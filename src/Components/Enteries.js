@@ -10,24 +10,24 @@ export default function Enteries(){
             <BreadcrumbItem><NavLink to="/home">Home</NavLink></BreadcrumbItem>
             <BreadcrumbItem active>Enteries</BreadcrumbItem>
         </Breadcrumb>
-        <div className="mx-auto col-6 text-center my-5">
+        <div className="mx-auto col-8 text-center my-5">
             <Nav navbar>
                 <Row>
-                    <Col sm={4}>
+                    <Col xs={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/appertizers'>
                                  Appertizers
                             </NavLink>
                         </NavItem>
                     </Col>
-                    <Col sm={4}>
+                    <Col xs={4}>
                         <NavItem>
                             <NavLink className="nav-link text-danger" to ='/enteries'>
                              <strong>Enteries</strong>
                         </NavLink>
                         </NavItem>
                     </Col>
-                    <Col sm={4}>
+                    <Col xs={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/dessert'>
                                  Desserts
@@ -40,7 +40,7 @@ export default function Enteries(){
         </div>
             <Card className="my-4">
                 <Row className='g-0'>
-                    <Col className="col-sm-3 my-2">
+                    <Col className="col-xs-3 my-2">
                         <CardImg src="images/steak.png" className="col-6"/>
                     </Col>                        
                     <Col>
@@ -58,7 +58,7 @@ export default function Enteries(){
 
             <Card className="my-4">
                 <Row className='g-0'>
-                    <Col className="col-sm-3 my-2">
+                    <Col className="col-xs-3 my-2">
                         <CardImg src="images/steak.png" className="col-6"/>
                     </Col>                        
                     <Col>
@@ -76,7 +76,7 @@ export default function Enteries(){
 
             <Card className="my-4">
                 <Row className='g-0'>
-                    <Col className="col-sm-3 my-2">
+                    <Col className="col-xs-3 my-2">
                         <CardImg src="images/steak.png" className="col-6"/>
                     </Col>                        
                     <Col>

@@ -10,25 +10,25 @@ export default function Appertizers(){
             <BreadcrumbItem><NavLink to="/home">Home</NavLink></BreadcrumbItem>
             <BreadcrumbItem active>Appertizers</BreadcrumbItem>
         </Breadcrumb>
- <div className="mx-auto col-6 text-center my-5">
+ <div className="mx-auto col-8 text-center my-5">
 
             <Nav navbar>
                 <Row>
-                    <Col sm={4}>
+                    <Col xs={4}>
                         <NavItem>
                             <NavLink  className="nav-link text-danger" to ='/appertizers'>
                                  <strong>Appertizers</strong>
                             </NavLink>
                         </NavItem>
                     </Col>
-                    <Col sm={4}>
+                    <Col xs={4}>
                         <NavItem>
                             <NavLink className="nav-link " to ='/enteries'>
                                  Enteries
                         </NavLink>
                         </NavItem>
                     </Col>
-                    <Col sm={4}>
+                    <Col xs={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/dessert'>
                                  Desserts
@@ -41,7 +41,7 @@ export default function Appertizers(){
         </div>
             <Card className="my-4">
                 <Row className='g-0'>
-                    <Col className="col-sm-3 my-2">
+                    <Col className="col-xs-3 my-2">
                         <CardImg src="images/lobster.png" className="col-6"/>
                     </Col>                        
                     <Col>
@@ -59,7 +59,7 @@ export default function Appertizers(){
 
             <Card className="my-4">
                 <Row className='g-0'>
-                    <Col className="col-sm-3 my-2">
+                    <Col className="col-xs-3 my-2">
                         <CardImg src="images/lobster.png" className="col-6"/>
                     </Col>                        
                     <Col>
@@ -77,7 +77,7 @@ export default function Appertizers(){
 
             <Card className="my-4">
                 <Row className='g-0'>
-                    <Col className="col-sm-3 my-2">
+                    <Col className="col-xs-3 my-2">
                         <CardImg src="images/lobster.png" className="col-6"/>
                     </Col>                        
                     <Col>
