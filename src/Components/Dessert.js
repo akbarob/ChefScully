@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Dessert(){
     return(
-        <>
+        <div className="container">
          <Breadcrumb>
             <BreadcrumbItem><NavLink to="/home">Home</NavLink></BreadcrumbItem>
             <BreadcrumbItem active>Dessert</BreadcrumbItem>
@@ -16,21 +16,21 @@ export default function Dessert(){
                     <Col sm={4}>
                         <NavItem>
                             <NavLink  className="nav-link " to ='/appertizers'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> Appertizers
+                                Appertizers
                             </NavLink>
                         </NavItem>
                     </Col>
                     <Col sm={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/enteries'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> Enteries
+                                 Enteries
                         </NavLink>
                         </NavItem>
                     </Col>
                     <Col sm={4}>
                         <NavItem>
                             <NavLink className="nav-link text-danger" to ='/dessert'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> <strong>Desserts</strong>
+                                 <strong>Desserts</strong>
                             </NavLink>
                         </NavItem>
                     </Col>
@@ -93,7 +93,7 @@ export default function Dessert(){
             </Card>
 
             
-        </>
+        </div>
     )
 
 }

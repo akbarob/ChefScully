@@ -16,21 +16,21 @@ export default function Enteries(){
                     <Col sm={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/appertizers'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> Appertizers
+                                 Appertizers
                             </NavLink>
                         </NavItem>
                     </Col>
                     <Col sm={4}>
                         <NavItem>
                             <NavLink className="nav-link text-danger" to ='/enteries'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> <strong>Enteries</strong>
+                             <strong>Enteries</strong>
                         </NavLink>
                         </NavItem>
                     </Col>
                     <Col sm={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/dessert'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> Desserts
+                                 Desserts
                             </NavLink>
                         </NavItem>
                     </Col>

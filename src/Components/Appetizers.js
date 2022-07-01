@@ -17,21 +17,21 @@ export default function Appertizers(){
                     <Col sm={4}>
                         <NavItem>
                             <NavLink  className="nav-link text-danger" to ='/appertizers'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> <strong>Appertizers</strong>
+                                 <strong>Appertizers</strong>
                             </NavLink>
                         </NavItem>
                     </Col>
                     <Col sm={4}>
                         <NavItem>
-                            <NavLink className="nav-link" to ='/enteries'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> Enteries
+                            <NavLink className="nav-link " to ='/enteries'>
+                                 Enteries
                         </NavLink>
                         </NavItem>
                     </Col>
                     <Col sm={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/dessert'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> Desserts
+                                 Desserts
                             </NavLink>
                         </NavItem>
                     </Col>

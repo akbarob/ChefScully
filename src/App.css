@@ -37,3 +37,7 @@
     border-radius: 10px;
 
 }
+.nav-link:hover {
+    border-style:;
+    border-bottom: 3px red solid;
+    }
