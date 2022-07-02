@@ -9,7 +9,7 @@ import Home from "./Home";
 
 
 
-export default function AnimatedRoutes(){
+export default function AnimatedRoutes(props){
     return(
         <AnimatePresence>
             <Routes>
@@ -17,7 +17,7 @@ export default function AnimatedRoutes(){
                 <Route path="/home" element={<Home/>}/>
                 <Route path="appertizers" element={<Appertizers/>}/>
                 <Route path="enteries"  element={<Enteries/>}/>
-                <Route path="dessert"   element={<Dessert/>}/>
+                <Route path="dessert"   element={<Dessert des={props.desserts}/>}/>
             </Routes>
         </AnimatePresence>
     )

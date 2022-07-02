@@ -2,7 +2,8 @@ import {Card, CardBody, CardImg, CardText, CardHeader, Row, Col, Breadcrumb, Bre
 import { NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function Dessert(){
+export default function Dessert(props){
+    console.log(props.des)
     return(
         <div className="container">
          <Breadcrumb>

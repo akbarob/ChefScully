@@ -1,6 +1,5 @@
 import { Nav, NavItem,  Row,Col, Navbar } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function SelectMenu(){
     return(
@@ -10,21 +9,21 @@ export default function SelectMenu(){
                     <Col xs={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/appertizers'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> Appertizers
+                                Appertizers
                             </NavLink>
                         </NavItem>
                     </Col>
                     <Col xs={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/enteries'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> Enteries
+                                Enteries
                         </NavLink>
                         </NavItem>
                     </Col>
                     <Col xs={4}>
                         <NavItem>
                             <NavLink className="nav-link" to ='/dessert'>
-                                <FontAwesomeIcon icon="fa-solid fa-croissant" /> Desserts
+                                Desserts
                             </NavLink>
                         </NavItem>
                     </Col>
