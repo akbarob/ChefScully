@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function SelectMenu(){
     return(
-        <div className="mx-auto col-8 text-center my-5">
+        <div className=" mx-auto col-9 text-center my-4">
             <Nav navbar>
                 <Row>
                     <Col xs={4}>

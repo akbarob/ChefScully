@@ -6,11 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Enteries(){
     return(
         <div className="container">
-        <Breadcrumb>
-            <BreadcrumbItem><NavLink to="/home">Home</NavLink></BreadcrumbItem>
-            <BreadcrumbItem active>Enteries</BreadcrumbItem>
-        </Breadcrumb>
-        <div className="mx-auto col-8 text-center my-5">
+            <Breadcrumb>
+                <BreadcrumbItem><NavLink to="/home">Home</NavLink></BreadcrumbItem>
+                <BreadcrumbItem active>Enteries</BreadcrumbItem>
+            </Breadcrumb>
+        <div className="container"></div>
+        <div className="mx-auto col-10 text-center my-4">
             <Nav navbar>
                 <Row>
                     <Col xs={4}>

@@ -1,16 +1,44 @@
 import {Card, CardBody, CardImg, CardText, CardHeader, Row, Col, Breadcrumb, BreadcrumbItem, NavItem, Nav} from "reactstrap"
 import { NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { auto } from "@popperjs/core"
+
+
+function RenderDessert(props){
+    return(
+        <Card className="my-4">
+                <Row className='g-0'>
+                    <Col className="col-xs-3 my-2">
+                        <CardImg src={props.item.img} className="col-6"/>
+                    </Col>                        
+                    <Col>
+                        <CardBody className="col-auto">
+                        <h5> {props.item.name}, {props.item.price}</h5>
+                            <CardText>
+                               {props.item.description}
+                            </CardText>
+                        </CardBody>
+                    </Col>
+                 </Row>
+            </Card>
+    )
+}
+
 
 export default function Dessert(props){
-    console.log(props.des)
+    console.log(props.dessert)
+    const listDessert= props.dessert.map( item =>{
+        return(
+            <RenderDessert key={item.id} item={item}/>
+        )
+    })
     return(
         <div className="container">
-         <Breadcrumb>
-            <BreadcrumbItem><NavLink to="/home">Home</NavLink></BreadcrumbItem>
-            <BreadcrumbItem active>Dessert</BreadcrumbItem>
-        </Breadcrumb>
- <div className="mx-auto col-8 text-center my-5">
+            <Breadcrumb>
+                <BreadcrumbItem><NavLink to="/home">Home</NavLink></BreadcrumbItem>
+                <BreadcrumbItem active>Dessert</BreadcrumbItem>
+            </Breadcrumb>
+        <div className="mx-auto col-10 text-center my-4">
 
             <Nav navbar>
                 <Row>
@@ -39,59 +67,10 @@ export default function Dessert(props){
                 
             </Nav>
         </div>
-            <Card className="my-4">
-                <Row className='g-0'>
-                    <Col className="col-xs-3 my-2">
-                        <CardImg src="images/steak.png" className="col-6"/>
-                    </Col>                        
-                    <Col>
-                        <CardBody className="col-auto">
-                        <CardHeader>
-                            <h4>Prime Rib Roast</h4>
-                        </CardHeader>
-                            <CardText>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien bibendum ac pharetra neque, hendrerit urna, enim, neque. Turpis dolor quisque vel risus convallis. Mattis sagittis pro</p>
-                            </CardText>
-                        </CardBody>
-                    </Col>
-                 </Row>
-            </Card>
-
-            <Card className="my-4">
-                <Row className='g-0'>
-                    <Col className="col-xs-3 my-2">
-                        <CardImg src="images/steak.png" className="col-6"/>
-                    </Col>                        
-                    <Col>
-                        <CardBody className="col-auto">
-                        <CardHeader>
-                            <h4>Prime Rib Roast</h4>
-                        </CardHeader>
-                            <CardText>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien bibendum ac pharetra neque, hendrerit urna, enim, neque. Turpis dolor quisque vel risus convallis. Mattis sagittis pro</p>
-                            </CardText>
-                        </CardBody>
-                    </Col>
-                 </Row>
-            </Card>
-
-            <Card className="my-4">
-                <Row className='g-0'>
-                    <Col className="col-xs-3 my-2">
-                        <CardImg src="images/steak.png" className="col-6"/>
-                    </Col>                        
-                    <Col>
-                        <CardBody className="col-auto">
-                        <CardHeader>
-                            <h4>Prime Rib Roast</h4>
-                        </CardHeader>
-                            <CardText>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien bibendum ac pharetra neque, hendrerit urna, enim, neque. Turpis dolor quisque vel risus convallis. Mattis sagittis pro</p>
-                            </CardText>
-                        </CardBody>
-                    </Col>
-                 </Row>
-            </Card>
+        <div>
+        {listDessert}
+        </div>
+            
 
             
         </div>

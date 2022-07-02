@@ -17,7 +17,7 @@ export default function AnimatedRoutes(props){
                 <Route path="/home" element={<Home/>}/>
                 <Route path="appertizers" element={<Appertizers/>}/>
                 <Route path="enteries"  element={<Enteries/>}/>
-                <Route path="dessert"   element={<Dessert des={props.desserts}/>}/>
+                <Route path="dessert"   element={<Dessert dessert={props.dish}/>}/>
             </Routes>
         </AnimatePresence>
     )

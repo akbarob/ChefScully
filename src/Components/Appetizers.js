@@ -2,6 +2,7 @@ import {Card, CardBody, CardImg, CardText, CardHeader, Row, Col, Breadcrumb, Bre
 import { Nav, NavItem, } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { auto } from "@popperjs/core";
 
 export default function Appertizers(){
     return(
@@ -10,7 +11,7 @@ export default function Appertizers(){
             <BreadcrumbItem><NavLink to="/home">Home</NavLink></BreadcrumbItem>
             <BreadcrumbItem active>Appertizers</BreadcrumbItem>
         </Breadcrumb>
- <div className="mx-auto col-8 text-center my-5">
+ <div className="mx-auto col-10 text-center my-4">
 
             <Nav navbar>
                 <Row>

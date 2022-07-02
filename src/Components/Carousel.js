@@ -6,7 +6,6 @@ import {
     CarouselCaption,
 } from 'reactstrap';
 import { useState } from 'react';
-import { auto } from '@popperjs/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -21,15 +20,16 @@ function MyCarousel() {
     // Sample items for Carousel
     const items = [
         {
-            caption: 'Sample Caption One',src: 
-'images/pie di.png',
-            altText: 'Slide One'
+            caption: 'Sample Caption One',
+            src: 'images/pie di.png',
+            altText: 'Slide One',
+            rating: <FontAwesomeIcon icon="fa-solid fa-star "/>
         },
         {
-            caption: 'Sample Caption Two',src: 
-'images/loaf.png',
+            caption: 'Sample Caption Two',
+            src: 'images/loaf.png',
             altText: 'Slide Two',
-            rating: <FontAwesomeIcon icon="fa-solid fa-star "/>
+            rating: <FontAwesomeIcon icon="fa-solid fa-star "/>  
         }
     ];
   
